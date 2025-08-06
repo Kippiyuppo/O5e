@@ -1,0 +1,13 @@
+theme: minima
+include:
+  - assets/css/custom.css
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+plugins:
+  - jekyll-include-cache
+minima:
+  include_custom_head: true
+permalink: /Levoonia/404.md
