@@ -45,7 +45,7 @@
   top: 100%;
   left: 0;
   flex-direction: column;
-  background-image: @backgroundImage;
+  background-image: $backgroundImage;
   padding: 0.5rem;
   z-index: 1000;
 }
