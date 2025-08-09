@@ -1,5 +1,7 @@
-title: Five Eeee
-baseurl: ""
-sass:
-  sass_dir: _sass
-  style: compressed
+title: Teszt oldal
+description: Gyors próba a témához
+
+remote_theme: jeremyboggs/5e
+
+plugins:
+  - jekyll-remote-theme
