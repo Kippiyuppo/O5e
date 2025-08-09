@@ -8,6 +8,11 @@ $monsterStatBackground : #FDF1DC;
 .page { margin: 0; }
 body {
 	counter-reset : phb-page-numbers;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 1rem;
+	box-sizing: border-box;
+
 }
 *{
 	-webkit-print-color-adjust : exact;
