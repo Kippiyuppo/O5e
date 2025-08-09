@@ -1,0 +1,60 @@
+.dropdown-navbar {
+  position: relative;
+  z-index: 10;
+}
+
+.dropdown-navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 10px;
+  max-width: 100vw;         /* Ne lógjon ki a viewportból */
+  box-sizing: border-box;   /* Paddinget is beleszámolja a szélességbe */
+  overflow-x: auto;         /* Görgethető, ha mégis kilóg */
+  position: relative; /* szükséges az abszolút pozícionáláshoz */
+  overflow: visible;  /* engedi, hogy a lenyíló menü kilógjon */
+  list-style: none; /* eltünteti a pontokat/karikákat */
+  z-index: 10;
+}
+
+.dropdown-navbar li {
+  position: relative;
+}
+
+.dropdown-navbar > ul > li {
+  padding: 10px;
+  display: flex;
+}
+
+.dropdown-navbar > ul > li > a {
+  display: flex;
+  height: 100%;
+}
+
+.dropdown-navbar a {
+  text-decoration: none;
+  color: #7a2b17;
+  font-weight: bold;
+  white-space: nowrap;      /* Ne törje meg a linket */
+  z-index: 500;
+}
+
+.dropdown-navbar ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  flex-direction: column;
+  background-color: #f7ebcb;
+  padding: 0.5rem;
+  z-index: 1000;
+}
+
+.dropdown-navbar li:hover > ul {
+  display: block;
+}
+
+.dropdown-navbar ul ul li {
+  padding: 5px 10px;
+  white-space: nowrap;
+}
