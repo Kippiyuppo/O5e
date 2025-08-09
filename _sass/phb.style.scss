@@ -259,54 +259,6 @@ body {
 		@include useColumns(0.96);
 	}
 	//*****************************
-	// *           FOOTER
-	// *****************************/
-	&:after{
-		content          : "";
-		position         : absolute;
-		bottom           : 0px;
-		left             : 0px;
-		z-index          : 100;
-		height           : 50px;
-		width            : 100%;
-		background-image : $footerAccentImage;
-		background-size  : cover;
-	}
-	&:nth-child(even) {
-		&:after{
-			transform : scaleX(-1);
-		}
-		.pageNumber{
-			left : 2px;
-		}
-		.footnote{
-			left       : 80px;
-			text-align : left;
-		}
-	}
-	.pageNumber{
-		position   : absolute;
-		right      : 2px;
-		bottom     : 22px;
-		width      : 50px;
-		font-size  : 0.9em;
-		color      : #c9ad6a;
-		text-align : center;
-		&.auto::after {
-			content : counter(phb-page-numbers);
-		}
-	}
-	.footnote{
-		position   : absolute;
-		right      : 80px;
-		bottom     : 32px;
-		z-index    : 150;
-		width      : 200px;
-		font-size  : 0.8em;
-		color      : #c9ad6a;
-		text-align : right;
-	}
-	//*****************************
 	// *          EXTRAS
 	// *****************************/
 	hr{
@@ -379,14 +331,6 @@ body {
 		page-break-inside           : auto;
 		break-inside                : auto;
 	}
-}
-//*****************************
-// *         WIDE
-// *****************************/
-.phb .wide{
-	column-span         : all;
-	-webkit-column-span : all;
-	-moz-column-span    : all;
 }
 //*****************************
 // *       CLASS TABLE
