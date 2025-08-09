@@ -1,7 +1,5 @@
-title: Teszt oldal
-description: Gyors próba a témához
-
-remote_theme: jeremyboggs/5e
-
-plugins:
-  - jekyll-remote-theme
+title: O5e
+baseurl: "https://kippiyuppo.github.io/O5e/"
+sass:
+  sass_dir: _sass
+  style: compressed
