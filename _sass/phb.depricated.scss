@@ -1,11 +1,3 @@
-.phb{
-	//Double hr for full width elements
-	hr+hr+blockquote{
-		column-span         : all;
-		-webkit-column-span : all;
-		-moz-column-span    : all;
-	}
-
 	//*****************************
 	// *      CLASS TABLE
 	// *****************************/
