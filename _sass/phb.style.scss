@@ -79,9 +79,10 @@ body {
 		list-style-type     : decimal;
 	}
 	//Indents after p or lists
-	p+p, ul+p, ol+p{
-		text-indent : 1em;
-	}
+	//p+p, ul+p, ol+p{
+	//	text-indent : 1em;
+	//}
+	
 	img{
 		z-index : -1;
 	}
